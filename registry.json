@@ -539,6 +539,79 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "auth-data-cache",
+      "type": "registry:lib",
+      "title": "Auth Data Cache",
+      "description": "Cache for auth data with subscription support",
+      "files": [
+        {
+          "path": "registry/lib/auth-data-cache.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "use-hydrated",
+      "type": "registry:hook",
+      "title": "Use Hydrated",
+      "description": "Hook to check if component is hydrated",
+      "files": [
+        {
+          "path": "registry/hooks/use-hydrated.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "use-theme",
+      "type": "registry:hook",
+      "title": "Use Theme",
+      "description": "Hook to detect current theme (light/dark)",
+      "files": [
+        {
+          "path": "registry/hooks/use-theme.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "use-lang",
+      "type": "registry:hook",
+      "title": "Use Lang",
+      "description": "Hook to detect current language",
+      "files": [
+        {
+          "path": "registry/hooks/use-lang.ts",
+          "type": "registry:hook"
+        }
+      ]
+    },
+    {
+      "name": "fetch-error",
+      "type": "registry:lib",
+      "title": "Fetch Error",
+      "description": "Type definitions for fetch errors",
+      "files": [
+        {
+          "path": "registry/types/fetch-error.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "use-auth-data",
+      "type": "registry:hook",
+      "title": "Use Auth Data",
+      "description": "Hook for fetching and caching auth data",
+      "registryDependencies": ["auth-data-cache", "auth-ui-provider", "utils", "fetch-error"],
+      "files": [
+        {
+          "path": "registry/hooks/use-auth-data.ts",
+          "type": "registry:hook"
+        }
+      ]
     }
   ]
 }
