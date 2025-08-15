@@ -6,7 +6,8 @@
     "scripts": {
         "build": "tsup --clean --dts && cp src/style.css dist/style.css",
         "dev": "tsc-watch",
-        "prepublishOnly": "rm -rf dist && turbo build"
+        "prepublishOnly": "rm -rf dist && turbo build",
+        "build-registry": "node scripts/build-registry.js"
     },
     "type": "module",
     "main": "./dist/index.cjs",
