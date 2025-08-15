@@ -1,0 +1,544 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "better-auth-ui",
+  "homepage": "https://better-auth-ui.com",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utils",
+      "description": "Utility functions for better-auth-ui components",
+      "files": [
+        {
+          "path": "registry/lib/utils.ts",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "auth-ui-provider",
+      "type": "registry:lib",
+      "title": "Auth UI Provider",
+      "description": "Context provider for better-auth-ui components",
+      "dependencies": ["better-auth", "sonner"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/lib/auth-ui-provider.tsx",
+          "type": "registry:lib"
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "A button component with variants",
+      "dependencies": ["@radix-ui/react-slot", "class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/button.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "A card component with header, content, and footer",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/card.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "An input component",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "A label component",
+      "dependencies": ["@radix-ui/react-label"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/label.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "title": "Form",
+      "description": "Form components built on React Hook Form",
+      "dependencies": ["@radix-ui/react-label", "@radix-ui/react-slot", "react-hook-form"],
+      "registryDependencies": ["utils", "label"],
+      "files": [
+        {
+          "path": "registry/ui/form.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "A checkbox component",
+      "dependencies": ["@radix-ui/react-checkbox"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/checkbox.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "A dropdown menu component",
+      "dependencies": ["@radix-ui/react-dropdown-menu"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "An avatar component",
+      "dependencies": ["@radix-ui/react-avatar"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/avatar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "A dialog component",
+      "dependencies": ["@radix-ui/react-dialog"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "A select component",
+      "dependencies": ["@radix-ui/react-select"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "A tabs component",
+      "dependencies": ["@radix-ui/react-tabs"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "A separator component",
+      "dependencies": ["@radix-ui/react-separator"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/separator.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "A skeleton component for loading states",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/skeleton.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "A textarea component",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/textarea.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input OTP",
+      "description": "An OTP input component",
+      "dependencies": ["input-otp"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/input-otp.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "A drawer component",
+      "dependencies": ["vaul"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/drawer.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "An alert component",
+      "dependencies": ["class-variance-authority"],
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/ui/alert.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "password-input",
+      "type": "registry:component",
+      "title": "Password Input",
+      "description": "A password input component with show/hide toggle",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "input", "button"],
+      "files": [
+        {
+          "path": "registry/components/password-input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "user-avatar",
+      "type": "registry:component",
+      "title": "User Avatar",
+      "description": "A user avatar component with fallbacks",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "avatar", "skeleton", "auth-ui-provider"],
+      "files": [
+        {
+          "path": "registry/components/user-avatar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "user-button",
+      "type": "registry:component",
+      "title": "User Button",
+      "description": "A user button component with dropdown menu",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "user-avatar", "dropdown-menu", "separator", "auth-ui-provider"],
+      "files": [
+        {
+          "path": "registry/components/user-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "provider-icons",
+      "type": "registry:component",
+      "title": "Provider Icons",
+      "description": "Social provider icons",
+      "registryDependencies": ["utils"],
+      "files": [
+        {
+          "path": "registry/components/provider-icons.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "form-error",
+      "type": "registry:component",
+      "title": "Form Error",
+      "description": "A form error component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "alert"],
+      "files": [
+        {
+          "path": "registry/components/form-error.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sign-in-form",
+      "type": "registry:component",
+      "title": "Sign In Form",
+      "description": "A sign-in form component",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "form", "input", "password-input", "checkbox", "button", "form-error"],
+      "files": [
+        {
+          "path": "registry/components/auth/forms/sign-in-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sign-up-form",
+      "type": "registry:component",
+      "title": "Sign Up Form",
+      "description": "A sign-up form component",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "form", "input", "password-input", "checkbox", "button", "form-error", "user-avatar"],
+      "files": [
+        {
+          "path": "registry/components/auth/forms/sign-up-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "forgot-password-form",
+      "type": "registry:component",
+      "title": "Forgot Password Form",
+      "description": "A forgot password form component",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "form", "input", "button", "form-error"],
+      "files": [
+        {
+          "path": "registry/components/auth/forms/forgot-password-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "reset-password-form",
+      "type": "registry:component",
+      "title": "Reset Password Form",
+      "description": "A reset password form component",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "form", "password-input", "button", "form-error"],
+      "files": [
+        {
+          "path": "registry/components/auth/forms/reset-password-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "two-factor-form",
+      "type": "registry:component",
+      "title": "Two Factor Form",
+      "description": "A two-factor authentication form component",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react", "input-otp"],
+      "registryDependencies": ["utils", "auth-ui-provider", "form", "input-otp", "button", "form-error"],
+      "files": [
+        {
+          "path": "registry/components/auth/forms/two-factor-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "magic-link-form",
+      "type": "registry:component",
+      "title": "Magic Link Form",
+      "description": "A magic link form component",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "form", "input", "button", "form-error"],
+      "files": [
+        {
+          "path": "registry/components/auth/forms/magic-link-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "auth-form",
+      "type": "registry:component",
+      "title": "Auth Form",
+      "description": "A unified authentication form component",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "card", "tabs", "separator", "button", "sign-in-form", "sign-up-form", "forgot-password-form", "provider-icons"],
+      "files": [
+        {
+          "path": "registry/components/auth/auth-form.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "auth-view",
+      "type": "registry:component",
+      "title": "Auth View",
+      "description": "A complete authentication view component",
+      "registryDependencies": ["utils", "auth-ui-provider", "auth-form", "two-factor-form", "reset-password-form", "magic-link-form"],
+      "files": [
+        {
+          "path": "registry/components/auth/auth-view.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "update-avatar-card",
+      "type": "registry:component",
+      "title": "Update Avatar Card",
+      "description": "A card component for updating user avatar",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "card", "button", "user-avatar", "dropdown-menu"],
+      "files": [
+        {
+          "path": "registry/components/settings/account/update-avatar-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "update-name-card",
+      "type": "registry:component",
+      "title": "Update Name Card",
+      "description": "A card component for updating user name",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "card", "form", "input", "button"],
+      "files": [
+        {
+          "path": "registry/components/settings/account/update-name-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "change-password-card",
+      "type": "registry:component",
+      "title": "Change Password Card",
+      "description": "A card component for changing user password",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "card", "form", "password-input", "button"],
+      "files": [
+        {
+          "path": "registry/components/settings/security/change-password-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "sessions-card",
+      "type": "registry:component",
+      "title": "Sessions Card",
+      "description": "A card component for managing user sessions",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "card", "button", "separator"],
+      "files": [
+        {
+          "path": "registry/components/settings/security/sessions-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "delete-account-card",
+      "type": "registry:component",
+      "title": "Delete Account Card",
+      "description": "A card component for deleting user account",
+      "dependencies": ["@hookform/resolvers", "react-hook-form", "zod", "lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "card", "form", "password-input", "button", "dialog"],
+      "files": [
+        {
+          "path": "registry/components/settings/account/delete-account-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "organization-switcher",
+      "type": "registry:component",
+      "title": "Organization Switcher",
+      "description": "A dropdown component for switching between organizations",
+      "dependencies": ["lucide-react"],
+      "registryDependencies": ["utils", "auth-ui-provider", "dropdown-menu", "user-avatar", "separator", "button"],
+      "files": [
+        {
+          "path": "registry/components/organization/organization-switcher.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "organization-logo",
+      "type": "registry:component",
+      "title": "Organization Logo",
+      "description": "An organization logo component",
+      "registryDependencies": ["utils", "avatar"],
+      "files": [
+        {
+          "path": "registry/components/organization/organization-logo.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
