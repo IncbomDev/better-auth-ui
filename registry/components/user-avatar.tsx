@@ -4,8 +4,8 @@ import { UserRound } from "lucide-react"
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
-import { Avatar, AvatarFallback, AvatarImage } from "@/ui/avatar"
-import { Skeleton } from "@/ui/skeleton"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Skeleton } from "@/components/ui/skeleton"
 
 export interface UserAvatarClassNames {
   base?: string
